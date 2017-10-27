@@ -1,7 +1,7 @@
 # A chatbot trained with « The Big Bang Theory » dialogues
 
 Conversational modelling is an important task in natural language processing as well as machine learning. A model was trained using the dialogues of a popular TV show: “The Big Bang Theory”. 
-The chatbot has been developed using Python on IBM PowerAI for IBM Power Systems, ChatterBot a Python library using a selection of machine learning algorithms to produce different types of responses, MongoDB to store statements and dialogues. 
+The chatbot has been developed using Python on IBM PowerAI for IBM Power Systems, ChatterBot a Python library using a selection of machine learning algorithms to produce different types of responses, MongoDB to store statements and dialogues. ChatterBot is really easy to install and use. 
 
 The result is quite funny: 
 
