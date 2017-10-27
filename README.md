@@ -22,20 +22,21 @@ Then,
 
 The following part of the code aims to provide feedback to the chatbot. Just comment this part if you want to stop providing feedback. 
 
-          while True:
-            try:
-                  input_statement = bot.input.process_input_statement()
-                  statement, response = bot.generate_response(input_statement, CONVERSATION_ID)
-                  bot.output.process_response(response)
-                  print('\n Is "{}" a coherent response to "{}"? \n'.format(response, input_statement))
-                  if get_feedback():
-                        print("please input the correct one")
-                        response1 = bot.input.process_input_statement()
-                        bot.learn_response(response1, input_statement)
-                        bot.storage.add_to_conversation(CONVERSATION_ID, statement, response1)
-                        print("Responses added to bot!")
-                  except (KeyboardInterrupt, EOFError, SystemExit):
-                        break
+      while True:
+        try:
+            input_statement = bot.input.process_input_statement()
+            statement, response = bot.generate_response(input_statement, CONVERSATION_ID)
+            bot.output.process_response(response)
+            print('\n Is "{}" a coherent response to "{}"? \n'.format(response, input_statement))
+            if get_feedback():
+                  print("please input the correct one")
+                  response1 = bot.input.process_input_statement()
+                  bot.learn_response(response1, input_statement)
+                  bot.storage.add_to_conversation(CONVERSATION_ID, statement, response1)
+                  print("Responses added to bot!")
+        except (KeyboardInterrupt, EOFError, SystemExit):
+            break
+
 
 If you run it on IBM Power Systems:
 
