@@ -8,9 +8,15 @@ The result is quite funny:
 # To run the code:
 
 Install ChatterBot: https://github.com/gunthercox/ChatterBot
+
 Install MongoDB: https://docs.mongodb.com/manual/administration/install-community/
+
 Download The Big Bang Theory Corpus: https://github.com/skashyap7/TBBTCorpus
-Use yml_converter.py in utils to the raw data (preprocessing/raw_corpus/). You will need to change input/outputs in the file. Copy/Paste the output (filename.yml) in corpus_data
+
+Use yml_converter.py in utils to the raw data (preprocessing/raw_corpus/). You will need to change input/outputs in the file. 
+
+Copy/Paste the output (filename.yml) in corpus_data
+
 Before running the code, do not forget to start Mongodb
 
   mongod --dbpath <path to data directory>
