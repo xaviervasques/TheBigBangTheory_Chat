@@ -5,6 +5,9 @@ The chatbot has been developed using Python on IBM PowerAI for IBM Power Systems
 
 The result is quite funny: 
 
+https://www.youtube.com/watch?v=h1VRmJZU3lA&feature=youtu.be
+
+
 # To run the code:
 
 * Install ChatterBot: https://github.com/gunthercox/ChatterBot
